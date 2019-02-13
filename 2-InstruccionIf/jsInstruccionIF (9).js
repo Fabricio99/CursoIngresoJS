@@ -1,11 +1,10 @@
 function mostrar()
 {
 //Genero el número RANDOM entre 1 y 10 
-	var numero;
-	srand(time(NULL));
+  var numeroRandom;
 
-	numero = 1 + rand() % ((10+1) - 1);
-
-	printf("%1",numero);
+  numeroRandom=Math.floor((Math.random() * 10) + 1);
+  //alert(numeroRandom);
+  console.log(numeroRandom);
 
 }//FIN DE LA FUNCIÓN
