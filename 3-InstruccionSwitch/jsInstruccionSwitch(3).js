@@ -6,24 +6,12 @@ var mensaje;
 
 switch(mesDelAño)
 {
-	case "Enero":
 	case "Febrero":
-	case "Marzo":
-	case "Abril":
-	case "Mayo":
-	case "Junio":
-	case "Julio":
-	case "Agosto":
-    case "Septiembre":
-    case "Octubre":
-    case "Noviembre":
-    case "Diciembre":
-    mensaje="Este mes tiene 30 o mas dias";
-        break;
+	mensaje="Este mes no tiene más de 29 días.";
+	   break;
+	default:
+	mensaje="Este mes tiene 30 dias o mas";
 }
+
 alert (mensaje);
-	
-	
-
-
 }//FIN DE LA FUNCIÓN
