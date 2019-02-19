@@ -28,18 +28,9 @@ function mostrar()
 
    if(producto >=2)
    {
-   	 precioFinal1 = precio - descuento1;
-     precio - descuento1;
-     if(precio >=2000)
-   	 precioFinal2 = precio - descuento2;
-   	 precio - descuento2;
-   }
-
-   if(metodoPago == "tarjeta" || "Tarjeta")
+      precioFinal1=precio-descuento1;
+   }else
    {
-   	precioFinal3 = precio + recargo;
-   	precio + recargo;
+      (precio>=2000)
+      precioTotal=precio-descuento2
    }
-   precioTotal = precioFinal1 + precioFinal2 + precioFinal3;
-   alert("Su precio final es de "+precioTotal);
-}
