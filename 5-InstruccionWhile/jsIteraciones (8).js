@@ -4,8 +4,10 @@ function mostrar()
 	var contador=0;
 	var acumPositivo=0;
 	var acumNegativo=1;
-	
-	var respuesta='si';
+	var rta;
+	//var respuesta='si';
+	alert("Hola");
+	continue
 
 
 

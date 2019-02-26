@@ -2,25 +2,39 @@ function mostrar()
 //while(isNaN(numero));
 {
 
-	var contador=0;
-	var acumulador=0;
-	var numero;
-    var respuesta='si'
+    //var respuesta='si';
+    var numero;
+    var contador=0;
+    var acumulador=0;
+    var respuesta='si';
 
     numero=prompt("Ingrese un numero");
-
-    while(respuesta != 'no')
+    numero=parseInt(numero);
+    do
     {
-    	respuesta=confirm('Desea continuar?');
+        numero=prompt("Error ingrese un numero valido");
+        numero=parseInt(numero);
+    }while(isNaN(numero));
 
-     do 
-     {
-	 numero=prompt("Ingrese un numero");
-	 numero=parseInt(numero);
-     }
-     while(isNaN(numero));
-    }
+    respuesta=prompt("Desea ingresar otro numero? 'si/no'");
 
+        while(respuesta!='si' && respuesta!='no')
+        {
+            respuesta=prompt("Error, vuelva a ingresar 'si/no'");
+        }
+        acumulador+=numero;
+        while(respuesta=='si')
+        {
+            contador++;
+            numero=prompt("Ingrese un numero");
+            numero=parseInt(numero);
+            acumulador+=numero;
+            respuesta=prompt("Desea ingresar otro numero? 'si/no'");
+            while(respuesta!='si' && respuesta!='no')
+        {
+            respuesta=prompt("Error, vuelva a ingresar 'si/no'");
+        }
+}
 
 document.getElementById('suma').value=acumulador;
 document.getElementById('promedio').value=acumulador/contador;
