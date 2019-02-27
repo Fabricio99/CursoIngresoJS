@@ -9,7 +9,7 @@ function mostrar()
 	while(rta==true)	
 	{
 		num = prompt("Ingrese un número");
-		if(num == null)
+		if(num == false)
 		//si cancelo salgo del while
 		{
 			break;

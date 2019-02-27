@@ -14,7 +14,7 @@ function mostrar()
     {
         numero=prompt("Error ingrese un numero valido");
         numero=parseInt(numero);
-    }while(isNaN(numero));
+    }while(isNaN(numero)==true);
 
     respuesta=prompt("Desea ingresar otro numero? 'si/no'");
 
